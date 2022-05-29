@@ -17,7 +17,8 @@ class MhtcWebPageState extends State<MhtcWebPage> {
       appBar: AppBar(
         title: GestureDetector(
           onTap: () {
-            Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
+            Navigator.of(context)// Solved!!
+                .pushReplacement(MaterialPageRoute(builder: (ctx) {
               return MhtcColorPage();
             }));
           },
